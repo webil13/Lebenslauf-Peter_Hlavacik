@@ -1,0 +1,31 @@
+.brand-logo {
+  margin-left: 1em;
+}
+.table-of-contents {
+  position: sticky;
+  padding: 2em;
+}
+
+.parallax-container {
+  height: 20em;
+}
+div .job-bg {
+  background-image: url(img/JobSecBg.jpeg) no-repeat;
+}
+/*Animate css*/
+#cta-btn {
+  -webkit-animation-delay: 1s;
+  -webkit-animation-duration: 0.7s;
+}
+#aboutMe-btn {
+  -webkit-animation-delay: 1.5s;
+  -webkit-animation-duration: 0.4s;
+}
+#name {
+  -webkit-animation-delay: 0.7s;
+  -webkit-animation-duration: 0.5s;
+}
+#socials {
+  -webkit-animation-delay: 1.8s;
+  -webkit-animation-duration: 0.7s;
+}
