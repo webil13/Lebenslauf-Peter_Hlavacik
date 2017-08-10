@@ -14,241 +14,258 @@
   <link type="text/css" rel="stylesheet" href="custom.css" media="screen,projection" />
   <!--Import animate.css-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+  <!-- particles.js css -->
+  <link rel="stylesheet" href="style.css">
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
-<body class="teal lighten-5">
-
   <body>
     <div class="navbar-fixed">
-      <nav class="nav-extended blue">
+      <nav class="blue">
         <div class="nav-wrapper">
-          <a href="#" class="brand-logo left">Lebenslauf</a>
-          <ul class="right">
+          <a href="#!" class="brand-logo left">Lebenslauf</a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse right"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
             <li><a href="index.html" class="waves-effect waves-light"><i class="left material-icons">account_box</i><span class="hide-on-small-only">PROFIL</span></a></li>
             <li><a href="jobs.html" class="waves-effect waves-light"><i class="left material-icons">library_books</i><span class="hide-on-small-only">JOBS</span></a></li>
             <li><a href="quali.html" class="waves-effect waves-light"><i class="left material-icons">thumb_up</i><span class="hide-on-small-only">KOMPETENZEN</span></a></li>
           </ul>
+          <ul class="side-nav" id="mobile-demo">
+            <li><a href="index.html" class="waves-effect waves-light">PROFIL</a></li>
+            <li><a href="jobs.html" class="waves-effect waves-light">JOBS</a></li>
+            <li><a href="quali.html" class="waves-effect waves-light">KOMPETENZEN</a></li>
+        </ul>
         </div>
       </nav>
     </div>
     <!-- navbar end -->
-    <div class="parallax-container">
-      <div class="parallax"><img src="parallax1.png"></div>
-    </div>
-    <!-- skills, use icomoon.io -->
-    <ul id="staggered-test" class="col s12">
-      <div class="row card-panel blue lighten-5">
-        <div class="container  halign-wrapper">
-          <li style="opacity: 0;" class="col s4 m4">
-            <div class="card z-depth-3 animated bounceIn">
-              <div class="card-content blue-text">
-                <span class="card-title">HTML5</span>
+    <div id="particles-js"></div>
+    <!-- skills determined -->
+      <div class="row card-panel">
+        <div class="container">
+          <div class="col s6 m6 l4">
+            <div id="htmlBox"class="card z-depth-3 animated bounceIn">
+              <div class="card-content blue-text center">
+                <span class="card-title hide-on-small-only">HTML5</span><br>
+                <img src="html.png" alt="html logo" class="img-responsive">
               </div>
               <div class="card-action">
                 <div class="progress">
                   <div class="determinate" style="width: 85%"></div>
                 </div>
+                <p class="blue-text right-align">85%</p>
               </div>
             </div>
-            <div class="card z-depth-3 animated bounceIn">
-              <div class="card-content blue-text">
-                <span class="card-title">ILLUSTRATOR</span>
-              </div>
-              <div class="card-action">
-                <div class="progress">
-                  <div class="determinate" style="width: 80%"></div>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li style="opacity: 0;" class="col s4 m4">
-            <div class="card z-depth-3 animated bounceIn">
-              <div class="card-content blue-text">
-                <span class="card-title">CSS3</span>
+          </div>
+          <!-- end html div -->
+          <div class="col s6 m6 l4">
+            <div id="cssBox"class="card z-depth-3 animated bounceIn">
+              <div class="card-content blue-text center">
+                <span class="card-title hide-on-small-only">CSS3</span><br>
+                <img src="css.ico" alt="css3 logo" class="img-responsive">
               </div>
               <div class="card-action">
                 <div class="progress">
                   <div class="determinate" style="width: 75%"></div>
                 </div>
+                <p class="blue-text right-align">75%</p>
               </div>
             </div>
-            <div class="card z-depth-3 animated bounceIn">
-              <div class="card-content blue-text">
-                <span class="card-title">PHOTOSHOP</span>
-              </div>
-              <div class="card-action">
-                <div class="progress">
-                  <div class="determinate" style="width: 80%"></div>
-                </div>
-              </div>
+          </div>
+          <!-- end css div -->
+          <div class="col s6 m6 l4">
+          <div id="jsBox"class="card z-depth-3 animated bounceIn">
+            <div class="card-content blue-text center">
+              <span class="card-title hide-on-small-only"><span>JAVASCRIPT</span></span><br>
+              <img src="js.png" alt="javascript logo" class="img-responsive">
             </div>
-          </li>
-            <li style="opacity: 0;" class="col s4 m4">
-            <div class="card z-depth-3 animated bounceIn">
-              <div class="card-content blue-text">
-                <span class="card-title">JAVASCRIPT</span>
+            <div class="card-action">
+              <div class="progress">
+                <div class="determinate" style="width: 65%"></div>
               </div>
-              <div class="card-action">
-                <div class="progress">
-                  <div class="determinate" style="width: 60%"></div>
-                </div>
-              </div>
+              <p class="blue-text right-align">65%</p>
             </div>
-            <div class="card z-depth-3 animated bounceIn">
-              <div class="card-content blue-text">
-                <span class="card-title">INDESIGN</span>
-              </div>
-              <div class="card-action">
-                <div class="progress">
-                  <div class="determinate" style="width: 60%"></div>
-                </div>
-              </div>
-            </div>
-          </li>
           </div>
         </div>
-      </ul>
-      <div class="parallax-container">
-        <div class="parallax"><img src="parallax2.png"></div>
-      </div>
+        <!-- end js div -->
+        <div class="col s6 m6 l4">
+            <div id="aiBox"class="card z-depth-3 animated bounceIn">
+              <div class="card-content blue-text center">
+                <span class="card-title hide-on-small-only"><span>ILLUSTRATOR</span></span><br>
+                <img src="ai.png" alt="illustrator logo" class="img-responsive">
+              </div>
+              <div class="card-action">
+                <div class="progress">
+                  <div class="determinate" style="width: 80%">80%</div>
+                </div>
+                <p class="blue-text right-align">80%</p>
+              </div>
+            </div>
+          </div>
+          <!-- end ai div -->
+          <div class="col s6 m6 l4">
+            <div id="psBox"class="card z-depth-3 animated bounceIn">
+              <div class="card-content blue-text center">
+                <span class="card-title hide-on-small-only"><span>PHOTOSHOP</span></span><br>
+                <img src="ps.png" alt="photoshop logo" class="img-responsive">
+              </div>
+              <div class="card-action">
+                <div class="progress">
+                  <div class="determinate" style="width: 70%"></div>
+                </div>
+                <p class="blue-text right-align">70%</p>
+              </div>
+            </div>
+          </div>
+          <!-- end ps div -->
+          <div class="col s6 m6 l4">
+            <div id="idBox"class="card z-depth-3 animated bounceIn">
+              <div class="card-content blue-text center">
+                <span class="card-title hide-on-small-only"><span>INDESIGN</span></span><br>
+                <img src="id.png" alt="indesign logo" class="img-responsive">
+              </div>
+              <div class="card-action">
+                <div class="progress">
+                  <div class="determinate" style="width: 60%"></div>
+                </div>
+                <p class="blue-text right-align">60%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
       <!-- Kompetenzen -->
       <div class="row">
-        <div class="col s12 l6">
-          <div class="card">
-            <div class="card-content">
-              <h5 class="center">Qualifikations Profil</h5>
-            </div>
-            <div class="card-tabs">
-              <ul class="tabs center flow-text">
-                <li class="tab"><a href="#test4" class="active blue-text darken-3 hoverable">Belastbarkeit</a></li>
-                <li class="tab"><a href="#test5" class="blue-text darken-3 hoverable">Zielorientierung</a></li>
-                <li class="tab"><a href="#test7" class="blue-text darken-3 hoverable">Flexibilität</a></li>
-              </ul>
-            </div>
-            <div class="card-content white darken-2 flow-text">
-              <div id="test4" class="center">Mit meiner mehrjährigen Berufserfahrung kann ich auch im hektische Situationen Überblick behalten und Prioritäten zu setzen.</div>
-              <div id="test5" class="center">Wenn ich mir ein Ziel setze habe ich das nötige Durchhaltevermögen es umzusetzen.</div>
-              <div id="test7" class="center">In meinem Berufsumfeld bin ich auf jeder Position einsetzbar und bereit nach Absprache auch zusätzliche Einsätze zu leisten.</div>
+        <div class="container flow-text">
+          <div class="col l12">
+            <div class="card">
+              <div class="card-content">
+                <h5 class="center">Qualifikations Profil</h5>
+              </div>
+              <div class="card-tabs">
+                <ul class="tabs center">
+                  <li class="tab"><a href="#test4" class="blue-text darken-3 hoverable">Analyse</a></li>
+                  <li class="tab"><a href="#test5" class="blue-text darken-3 hoverable">Umsetzung</a></li>
+                  <li class="tab"><a href="#test7" class="active blue-text darken-3 hoverable">Kreation</a></li>
+                </ul>
+              </div>
+              <div class="card-content white darken-2">
+                <div id="test4" class="center">Ich arbeite systematisch, strukturiert und zielorientiert. Das Sammeln von Informationen, die Problemanalyse und das Lösen von komplexen Problemen liegt mir.</div>
+                <div id="test5" class="center">Ich tendiere eher dazu, etwas zu unternehmen. Meistens fällt es mir einfach, sofort ‘anzupacken’, Arbeiten voranzutreiben, Pendenzen abzuarbeiten und die Aufgaben zu Ende zu bringen.</div>
+                <div id="test7" class="center">Ich denke gerne über Problemlösungen und neue Ideen nach. Die Kreation und Entwicklung von Neuem liegt mir.</div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col s12 l6">
-          <div class="card">
-            <div class="card-content">
-              <h5 class="center">Soziale Kompetenzen</h5>
-            </div>
-            <div class="card-tabs">
-              <ul class="tabs center flow-text">
-                <li class="tab"><a href="#test6" class="blue-text darken-3 hoverable">Teamfähigkeit</a></li>
-                <li class="tab"><a href="#test8" class="blue-text darken-3 hoverable">Motivation</a></li>
-                <li class="tab"><a href="#test9" class="blue-text darken-3 hoverable">Selbstsicher</a></li>
-              </ul>
-            </div>
-            <div class="card-content white darken-2 flow-text ">
-              <div id="test6" class="center">Ich kann mich gut in einem Arbeitsteam integrieren, weil ich gute Umgangsformen verfüge und voll Tolerant und Flexibel bin.</div>
-              <div id="test8" class="center">Dank positiven Denken bin ich immer genug motiviert und Dank mein Motivation kann ich immer Positiv Denken behalten.</div>
-              <div id="test9" class="center">Als Kellner im Umgang mit Gästen und Mitarbeitenden trete ich selbstsicher auf.</div>
+          <div class="col l12">
+            <div class="card">
+              <div class="card-content">
+                <h5 class="center">Kompetenzen</h5>
+              </div>
+              <div class="card-tabs">
+                <ul class="tabs center">
+                  <li class="tab"><a href="#test6" class="active blue-text darken-3 hoverable">Detail<span class="hide-on-small-only">orientiert</span></a></li>
+                  <li class="tab"><a href="#test8" class="blue-text darken-3 hoverable">Team<span class="hide-on-small-only">player</span></a></li>
+                  <li class="tab"><a href="#test9" class="blue-text darken-3 hoverable">Pragma<span class="hide-on-small-only">tisch</span></a></li>
+                </ul>
+              </div>
+              <div class="card-content white darken-2">
+                <div id="test6" class="center">Ich arbeite präzis, bin mich allerdings bewusst, dass Sie dadurch auch viel Zeit investieren.</div>
+                <div id="test8" class="center">In der Regel arbeite ich lieber und effizienter im Team, wobei es mich auch nicht schwerfällt, allein auf ein Ziel hin zu arbeiten.</div>
+                <div id="test9" class="center">Ich beurteile und entscheide fast ausschliesslich auf der Basis von Fakten und Zahlen.</div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="parallax-container">
-        <div class="parallax"><img src="bg-job1.png"></div>
-      </div>
+
       <!-- schule und sprachen -->
-      <div class="row  card blue lighten-5">
-        <div class="col m6">
-          <div class="container">
-            <ul>
-              <li>
-                <div class="center"><i class="material-icons">mode_edit</i><span class=" flow-text"> Schulausbildung</span><br><span class="grey-text">2002 - 2007</span></div>
+      <div class="row flow-text">
+        <div class="container">
+          <div class="col m12 l6">
+            <div class="card">
+              <div class="card-content">
+                <div class="center"><i class="material-icons">mode_edit</i> Schulausbildung<br><small>2002 - 2007</small></div>
                 <table>
                   <tr>
                     <td>
-                      <span class="flow-text">Studium auf Hotel Akademie Brezno.<br>Abgeschlossene Berufslehre als Koch/Kellner mit Ausbildungs Diplom und Fachmaturität.</span>
+                      Abgeschlossene Berufslehre als Kellner/Koch in der Hotel Akademie (Hotelfachschule) mit Fachmaturität.
                     </td>
                   </tr>
                   <tr>
                     <td><a href="#modal3" class="btn btn-large blue waves-effect waves-light white-text">Ausbildung Diplom</a></td>
                   </tr>
                 </table>
-              </li>
-            </ul>
-          </div>
-
-          <!-- ausbildung diplom modal -->
-          <div id="modal3" class="modal bottom-sheet">
-            <div class="modal-content">
-              <h4>Ausbildung Diplom</h4>
-              <table>
-                <tr>
-                  <td><img class="materialboxed" data-caption="Seite 1" width="200" src="Diplom1.png"></td>
-                  <td><img class="materialboxed" data-caption="Seite 2" width="200" src="Diplom2.png"></td>
-                  <td><img class="materialboxed" data-caption="Seite 3" width="200" src="Diplom3.png"></td>
-                  <td><img class="materialboxed" data-caption="Seite 4" width="200" src="Diplom4.png"></td>
-                  <td><img class="materialboxed" data-caption="Seite 5" width="200" src="Diplom5.png"></td>
-                </tr>
-              </table>
-            </div>
-            <div class="modal-footer">
-              <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Schliessen</a>
-            </div>
-          </div>
-        </div>
-        <div class="col m6">
-          <div class="container">
-            <ul class="flow-text left">
-              <li>
-                <div><i class="material-icons">language</i> Sprachen</div>
-                <div class="">
-                  <table>
-                    <tbody>
-                      <tr>
-                        <td>Englisch</td>
-                        <td>C1</td>
-
-                      </tr>
-                      <tr>
-                        <td>Deutsch</td>
-                        <td>B2</td>
-
-                      </tr>
-                      <tr>
-                        <td><a class="waves-effect waves-light btn btn-large blue modal-close" href="#modal1">Attest DE / EN</a></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <!-- modals-->
-          <div id="modal1" class="modal bottom-sheet">
-            <div class="modal-content">
-              <h4>Attest Sprachniveau DE / EN</h4>
-              <table>
-                <tr>
-                  <td><img class="materialboxed" data-caption="AttestEN" width="700" src="AttestEN.png"></td>
-                  <td><img class="materialboxed" data-caption="AttestDE" width="700" src="AttestDE.png"></td>
-                </tr>
-              </table>
-              <div class="modal-footer">
-                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Schliessen</a>
               </div>
             </div>
+
           </div>
+          <div class="col s12 m12 l6">
+            <div class="card">
+              <div class="card-content">
+                  <div class="center"><i class="material-icons">language</i> Sprachen</div><br>
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td>Englisch</td>
+                          <td>C1</td>
+                        </tr>
+                        <tr>
+                          <td>Deutsch</td>
+                          <td>B2</td>
+                        </tr>
+                        <tr>
+                          <td><a class="btn btn-large blue waves-effect waves-light white-text modal-close" href="#modal1">Sprachniveau Attest DE / EN</a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+            </div>
+            </div>
+
+            <!-- modals-->
+            <div id="modal1" class="modal bottom-sheet">
+              <div class="modal-content">
+                <div class="modal-footer">
+                  <a href="#!" class="modal-action modal-close btn-floating right animated rotateIn"><i class="material-icons">close</i></a>
+                  <h5 class="left animated tada">Attest Sprachniveau DE / EN</h5>
+                </div>
+                <table class="animated slideInUp">
+                  <tr>
+                    <td><img class="materialboxed" data-caption="AttestEN" width="100%" src="AttestEN.png"></td>
+                    <td><img class="materialboxed" data-caption="AttestDE" width="100%" src="AttestDE.png"></td>
+                  </tr>
+                </table>
+
+              </div>
+            </div>
+            <!-- ausbildung diplom modal -->
+            <div id="modal3" class="modal bottom-sheet">
+              <div class="modal-content">
+                <div class="modal-footer">
+                  <a href="#!" class="modal-action modal-close btn-floating right animated rotateIn"><i class="material-icons">close</i></a>
+                  <h5 class="left animated tada">Ausbildung Diplom</h5>
+                </div>
+                <table class="animated slideInUp">
+                  <tr>
+                    <td><img class="materialboxed" data-caption="Seite 1" width="100%" src="Diplom1.png"></td>
+                    <td><img class="materialboxed" data-caption="Seite 2" width="100%" src="Diplom2.png"></td>
+                    <td><img class="materialboxed" data-caption="Seite 3" width="100%" src="Diplom3.png"></td>
+                    <td><img class="materialboxed" data-caption="Seite 4" width="100%" src="Diplom4.png"></td>
+                    <td><img class="materialboxed" data-caption="Seite 5" width="100%" src="Diplom5.png"></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
         </div>
-      </div>
-      <div class="parallax-container">
-        <div class="parallax"><img src="bg-job2.png"></div>
-      </div>
-    </div>
+        </div>
+
 
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="materialize.min.js"></script>
+    <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
     <script type="text/javascript" src="custom.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>

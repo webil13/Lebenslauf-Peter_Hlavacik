@@ -22,4 +22,5 @@ $(document).ready(function() {
   $('.modal').modal();
   $('.materialboxed').materialbox();
   $('.parallax').parallax();
+  $('.button-collapse').sideNav();
 });

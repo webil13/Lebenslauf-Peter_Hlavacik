@@ -2,20 +2,17 @@
   margin-left: 1em;
 }
 .table-of-contents {
-  position: sticky;
-  padding: 2em;
+  position: fixed;
+  padding: 0 2em;
 }
-
-.parallax-container {
-  height: 20em;
-}
-div .job-bg {
-  background-image: url(img/JobSecBg.jpeg) no-repeat;
+#infoCard {
+  padding: 3em;
 }
 /*Animate css*/
 #cta-btn {
   -webkit-animation-delay: 1s;
   -webkit-animation-duration: 0.7s;
+  margin-bottom: 2em;
 }
 #aboutMe-btn {
   -webkit-animation-delay: 1.5s;
@@ -25,7 +22,32 @@ div .job-bg {
   -webkit-animation-delay: 0.7s;
   -webkit-animation-duration: 0.5s;
 }
+#name2 {
+  -webkit-animation-delay: 0.7s;
+  -webkit-animation-duration: 0.5s;
+}
 #socials {
   -webkit-animation-delay: 1.8s;
   -webkit-animation-duration: 0.7s;
+}
+#htmlBox {
+  -webkit-animation-delay: 0.1s;
+}
+#cssBox {
+  -webkit-animation-delay: 0.3s;
+}
+#jsBox {
+  -webkit-animation-delay: 0.6s;
+}
+#aiBox {
+  -webkit-animation-delay: 0.9s;
+}
+#psBox {
+  -webkit-animation-delay: 1.2s;
+}
+#idBox {
+  -webkit-animation-delay: 1.5s;
+}
+#sidenav-overlay {
+  position: relative;
 }

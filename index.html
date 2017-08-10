@@ -14,131 +14,178 @@
   <link type="text/css" rel="stylesheet" href="custom.css" media="screen,projection" />
   <!--Import animate.css-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+  <!-- particles.js css -->
+  <link rel="stylesheet" href="style.css">
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
-<body class="grey lighten-3">
+<body>
+  <!-- navbar -->
   <div class="navbar-fixed">
-    <nav class="nav-extended blue">
+    <nav class="blue">
       <div class="nav-wrapper">
-        <a href="#" class="brand-logo left">Lebenslauf</a>
-        <ul class="right">
+        <a href="#!" class="brand-logo left">Lebenslauf</a>
+        <!-- <a href="#" data-activates="slide-out" class="button-collapse right"><i class="material-icons">menu</i></a> -->
+        <ul class="side-nav" id="slide-out">
+          <li><a href="index.html">PROFIL</a></li>
+          <li><a href="jobs.html">JOBS</a></li>
+          <li><a href="quali.html">KOMPETENZEN</a></li>
+        </ul>
+
+        <ul class="right hide-on-med-and-down">
           <li><a href="index.html" class="waves-effect waves-light"><i class="left material-icons">account_box</i><span class="hide-on-small-only">PROFIL</span></a></li>
           <li><a href="jobs.html" class="waves-effect waves-light"><i class="left material-icons">library_books</i><span class="hide-on-small-only">JOBS</span></a></li>
           <li><a href="quali.html" class="waves-effect waves-light"><i class="left material-icons">thumb_up</i><span class="hide-on-small-only">KOMPETENZEN</span></a></li>
         </ul>
+
+      <a href="#!" data-activates="slide-out" class="button-collapse right hide-on-large"><i class="material-icons">menu</i></a>
       </div>
     </nav>
   </div>
   <!-- navbar end -->
 
-  <div class="col s12">
-    <div class="row">
-      <div class="col m12">
-        <div class="container valign-wrapper">
-          <div class="col s6 left">
-            <div class="card">
-              <div class="card-image">
-                <img src="Profil.png" class="responsive-img z-depth-3 align-right animated jello">
-              </div>
-              <div class="card-action">
-                <a id="aboutMe-btn"class="waves-effect waves-light btn btn-large blue white-text modal-trigger right animated flash" href="#modal11">Über mich</a>
-              </div>
+  <!-- particles background, edit in style.css -->
+  <div id="particles-js"></div>
+  <!-- end particles background -->
 
+  <!-- profil info -->
+    <div class="row">
+        <div class="container">
+          <div class="section halign-wrapper">
+            <div class="col s12 m6 l6 xl6">
+              <!-- profil img card -->
+              <div class="card">
+                <div class="card-image">
+                  <img src="Profil.png" class="responsive-img z-depth-3 animated jello hide-on-small-only">
+                  <img src="Profil2.png" class="responsive-img z-depth-3 animated jello hide-on-med-and-up">
+                </div>
+                <div class="card-action center">
+                  <a id="aboutMe-btn" class="waves-effect waves-light btn btn-large blue white-text modal-trigger animated flash" href="#modal11">Über mich</a>
+                </div>
+                <!-- end profil img card -->
+              </div>
+            </div>
+            <!-- profil info -->
+            <div class="col s12 m6 l6 xl6">
+              <div id="infoCard" class="card">
+                <ul id="staggered-test">
+                  <li style="opacity: 0;">
+                    <a href="mailto:p.hlavacik@gmail.com" id="cta-btn" class="btn btn-large teal accent-4 white-text animated shake">HIRE ME!</a>
+                  </li>
+                  <div class="divider"></div>
+                  <li style="opacity: 0">
+                    <h5 id="name" class="hide-on-small-only animated rubberBand center">PETER HLAVACIK</h5>
+                    <h6 id="name2" class="hide-on-med-and-up animated rubberBand center">PETER HLAVACIK</h6>
+                  </li>
+                  <div class="divider"></div>
+                  <li style="opacity: 0">
+                    <table class="bordered hide-on-large-only">
+                      <tbody>
+                        <tr>
+                          <td class="center">
+                            <a href="callto:0763613561" class="btn btn-floating btn-large green lighten-1 white-text center animated shake"><i class="fa fa-phone fa-3x" aria-hidden="true"></i></a>
+                          </td>
+                          <td class="center">
+                            <a href="mailto:p.hlavacik@gmail.com" class="btn btn-floating btn-large indigo lighten-1 white-text center animated shake"><i class="fa fa-envelope-o fa-3x" aria-hidden="true"></i></a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table class="bordered hide-on-med-and-down">
+                      <tbody>
+                        <tr>
+                          <td><small><p class="chip grey white-text">Natel:</p></small>
+                            <p class="center">+41 76 361 35 61</p>
+                          </td>
+                          <td><small><p class="chip grey white-text">E-Mail:</p></small>
+                            <p class="center">P.HLAVACIK@GMAIL.COM</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </li>
+                  <li style="opacity: 0">
+                    <table class="bordered">
+                      <tbody>
+                        <tr>
+                          <td><small><p class="chip grey white-text">Geburtsdatum:</p></small>
+                            <p class="center">02.03.1987</p>
+                          </td>
+                          <td><small><p class="chip grey white-text">Geburtsort:</p></small>
+                            <p class="center">BREZNO, SLOWAKEI</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </li>
+                  <li style="opacity: 0">
+                    <table class="bordered">
+                      <tbody <tr>
+                        <td><small><p class="chip grey white-text">Zivilstand:</p></small>
+                          <p class="center">LEDIG</p>
+                        </td>
+                        <td><small><p class="chip grey white-text">Bewilligung:</p></small>
+                          <p class="center">B</p>
+                        </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div class="col s6">
-            <ul id="staggered-test">
-              <li style="opacity: 0;" class="center">
-                <a href="mailto:p.hlavacik@gmail.com" id="cta-btn"class="btn btn-flat btn-large green white-text center animated shake"><i class="fa fa-envelope-o" aria-hidden="true"></i> HIRE ME!</a>
-              </li>
-              <br><br><br>
-              <li style="opacity: 0">
-                <h4 id="name"class="animated rubberBand">PETER HLAVACIK</h4>
-              </li>
-              <li style="opacity: 0">
-                <table class="bordered">
-                  <tbody>
-                    <tr>
-                      <td><small><p>Natel:</p></small>
-                        <p class="center">+41 76 361 35 61</p>
-                      </td>
-                      <td><small><p>E-Mail:</p></small>
-                        <p class="center">P.HLAVACIK@GMAIL.COM</p>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </li>
-              <li style="opacity: 0">
-                <table class="bordered">
-                  <tbody>
-                    <tr>
-                      <td><small><p>Geburtsdatum:</p></small>
-                        <p class="center">02.03.1987</p>
-                      </td>
-                      <td><small><p>Geburtsort:</p></small>
-                        <p class="center">BREZNO, SLOWAKEI</p>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </li>
-              <li style="opacity: 0">
-                <table class="bordered">
-                  <tbody <tr>
-                    <td><small><p>Zivilstand:</p></small>
-                      <p class="center">LEDIG</p>
-                    </td>
-                    <td><small><p>Aufenthaltsbewilligung:</p></small>
-                      <p class="center">B</p>
-                    </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </li>
+          <!-- end profil info -->
+
+          <!-- socials fab vertical -->
+          <div class="fixed-action-btn vertical">
+            <a id="socials" class="btn-floating btn-large blue animated bounceIn">
+              <i class="large material-icons">message</i>
+            </a>
+            <ul id="socicons">
+              <li class="center animated bounceIn"><a class="btn-floating btn-large light-blue darken-4" id="linkedinIcon" target="_blank" href="https://www.linkedin.com/in/peter-hlaváčik-580900a7/"><i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i></a></li>
+              <li class="center animated bounceIn"><a class="btn-floating btn-large teal darken-4" id="xingIcon" target="_blank" href="https://www.xing.com/profile/Peter_Hlavacik?sc_o=mxb_p"><i class="fa fa-xing-square fa-4x" aria-hidden="true"></i></a></li>
+              <li class="center animated bounceIn"><a class="btn-floating btn-large indigo darken-4" id="facebookIcon" target="_blank" href="https://www.facebook.com/pedro.gonzalesPH"><i class="fa fa-facebook-square fa-4x" aria-hidden="true"></i></a></li>
+              <li class="center animated bounceIn"><a class="btn-floating btn-large red darken-1" id="gplusIcon" onclick="onClick()" target="_blank" href="https://plus.google.com/+PeterHlav%C3%A1%C4%8DikPedro"><i class="fa fa-google-plus-square fa-4x" aria-hidden="true"></i></a></li>
+              <li class="center animated bounceIn"><a class="btn-floating btn-large grey darken-4" id="githubIcon" target="_blank" href="https://github.com/webil13"><i class="fa fa-github-square fa-4x" aria-hidden="true"></i></a></li>
             </ul>
           </div>
-        </div>
-
-        <div class="fixed-action-btn vertical click-to-toggle">
-          <a id="socials"class="btn-floating btn-large blue animated bounceIn">
-            <i class="large material-icons">message</i>
-          </a>
-          <ul>
-            <li class="waves-effect waves-light center hoverable"><a href="https://www.linkedin.com/in/peter-hlaváčik-580900a7/"><i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i></a></li>
-            <li class="waves-effect waves-light center hoverable"><a href="https://www.xing.com/profile/Peter_Hlavacik?sc_o=mxb_p"><i class="fa fa-xing-square fa-4x" aria-hidden="true"></i></a></li>
-            <li class="waves-effect waves-light center hoverable"><a href="https://www.facebook.com/pedro.gonzalesPH"><i class="fa fa-facebook-square fa-4x" aria-hidden="true"></i></a></li>
-            <li class="waves-effect waves-light center hoverable"><a href="https://plus.google.com/+PeterHlav%C3%A1%C4%8DikPedro"><i class="fa fa-google-plus-square fa-4x" aria-hidden="true"></i></a></li>
-            <li class="waves-effect waves-light center hoverable"><a href="https://github.com/webil13"><i class="fa fa-github-square fa-4x" aria-hidden="true"></i></a></li>
-          </ul>
-        </div>
-      </div>
-      <!-- Modal Trigger -->
+        <!-- end socials fab vertical  -->
 
 
-      <!-- Modal Structure -->
-      <div id="modal11" class="modal bottom-sheet">
-        <div class="modal-content">
-          <h5 class="flow-text">Meine Persönlichkeit</h5>
-          <p class="flow-text">Ich bin ein neugieriger und kommunikativ gewandter digital Native mit Interesse an abwechslungsreichen, operativen Tätigkeit in einem dynamischen Umfeld am bestens mit kurzen Entscheidungsweg. Momentan suche ich eine neue Herausforderung, bei
-            welcher ich viel bewirken und schnell Verantwortung übernehmen kann. Dazu verfüge ich ein ausgeprägtes unternehmerisches Denken und pragmatischen Ansatz. Sie profitieren von meiner Kreativität, Lernbereitschaft und detailorientierter Arbeit.
-          </p>
+        <!-- Modal #aboutMe-btn -->
+        <div id="modal11" class="modal bottom-sheet">
+          <div class="modal-content">
+            <div class="modal-footer">
+              <a href="#!" class="modal-action modal-close btn-floating right animated rotateIn"><i class="material-icons">close</i></a>
+              <h5 class="left animated tada">Meine Persönlichkeit</h5>
+            </div>
+
+            <p class="flow-text center hide-on-small-only animated slideInUp">Ich bin ein neugieriger und kommunikativ gewandter digital Native mit Interesse an abwechslungsreichen, operativen Tätigkeit in einem dynamischen Umfeld am bestens mit kurzen Entscheidungsweg. Momentan suche ich eine neue Herausforderung, bei
+              welcher ich viel bewirken und schnell Verantwortung übernehmen kann. Dazu verfüge ich ein ausgeprägtes unternehmerisches Denken und pragmatischen Ansatz. Sie profitieren von meiner Kreativität, Lernbereitschaft und detailorientierter Arbeit.
+            </p>
+            <p class="hide-on-med-and-up animated slideInUp">Ich bin ein neugieriger und kommunikativ gewandter digital Native mit Interesse an abwechslungsreichen, operativen Tätigkeit in einem dynamischen Umfeld am bestens mit kurzen Entscheidungsweg. Momentan suche ich eine neue Herausforderung, bei
+              welcher ich viel bewirken und schnell Verantwortung übernehmen kann. Dazu verfüge ich ein ausgeprägtes unternehmerisches Denken und pragmatischen Ansatz. Sie profitieren von meiner Kreativität, Lernbereitschaft und detailorientierter Arbeit.
+            </p>
+          </div>
+
         </div>
-        <div class="modal-footer">
-          <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Schliessen</a>
+        <!-- end modal -->
         </div>
-      </div>
     </div>
-  </div>
+    <!-- end profil info -->
 
 
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script type="text/javascript" src="materialize.min.js"></script>
-  <script type="text/javascript" src="custom.js">
-  </script>
+  <!-- particles.js import -->
+  <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
+  <!-- my custom js -->
+  <script type="text/javascript" src="custom.js"></script>
+  <!-- particles.js edit json -->
+  <script src="index.js"></script>
 </body>
 
 </html>
