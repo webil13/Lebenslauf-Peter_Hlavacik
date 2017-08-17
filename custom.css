@@ -8,6 +8,9 @@
 #infoCard {
   padding: 3em;
 }
+#infoKontakt {
+  font-weight: 600, thin;
+}
 /*Animate css*/
 #cta-btn {
   -webkit-animation-delay: 1s;
